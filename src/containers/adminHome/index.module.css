@@ -1,0 +1,52 @@
+.Home {
+    width: 100%;
+ }
+.sideMenu {
+    width: 18%;
+    border-right: 1px solid #e1e2e3;
+}
+.content { 
+    width: 82%;
+    padding: 24px;
+    background-color: #f6f8fa;
+}
+.body {
+    display: flex;
+    flex-direction: row;
+    min-height: 100%;
+}
+.bodyWrapper{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    top: 60px;
+}
+.AddCategoryContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    align-items: center;
+}
+.ProfessionalCategoryText {
+    font-family: NunitoSans-Bold;
+    font-size: 20px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #21262b;
+}
+.AddSubCategory{
+    width: 120px;
+    height: 36px;
+    border-radius: 2px;
+    background-color: #0883a7;
+    font-family: NunitoSans-SemiBold;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #ffffff;
+}

@@ -1,0 +1,103 @@
+
+  .FormContainer {
+    height: fit-content;
+  }
+  .Input { 
+    height: 40px;
+    border-radius: 2px;
+    border: solid 1px #e1e2e3;
+    background-color: #f8f9f9;
+    font-family: NunitoSans-SemiBold;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #21262b;
+    margin-bottom: 18px;
+  }
+  .Heading {
+    font-family: NunitoSans-Regular;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #595c60;
+    margin-bottom: 4px;
+  }
+  .SignInText {
+    font-family: NunitoSans-SemiBold;
+    font-size: 20px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #21262b;
+    margin-bottom: 24px;
+  }
+  .GrowText {
+    font-family: NunitoSans-SemiBold;
+    font-size: 18px;
+    line-height: 30px;
+    color: #21262b;
+    margin-bottom: 36px;
+    margin-top: 12px;
+    height: 18px;
+  }
+  .ForgotPasswordButton {
+    font-size: 16px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #0883a7;
+    padding: 0;
+    font-family: NunitoSans-SemiBold;
+    text-decoration: underline;
+    margin-bottom: 18px;
+    height: 24px;
+  }
+  .SignInButton {
+    display: block;
+    width: 100%;
+    margin-bottom: 18px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: #0883a7;
+    border: 0;
+  }
+  .SignInButtonText {
+    font-family: NunitoSans-SemiBold;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .Separator {
+    margin-bottom: 18px;
+  }
+  .HorizontalLine {
+    border-bottom: 1px solid #e1e2e3;
+  }
+  .ContinueUsingText {
+    text-align: center;
+    font-family: NunitoSans-Regular;
+    font-size: 14px;
+    color: #595c60;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+  }
+  .CreateAcount {
+    font-size: 16px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #0883a7;
+    padding: 0;
+    font-family: NunitoSans-SemiBold;
+    text-decoration: underline;
+    height: 24px;
+  }

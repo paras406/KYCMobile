@@ -1,0 +1,43 @@
+.ImageContainer {
+    border-radius: 2px;
+    background-color: #d3eff1;
+    height: fit-content;
+    padding-top: 36px;
+    padding-left: 36px;
+    padding-right: 10px;
+}
+.text1{
+    font-family: NunitoSans-Bold;
+    font-size: 24px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #21262b;
+    margin-bottom: 8px;
+}
+.text2{
+    font-family: NunitoSans-Regular;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #21262b;
+    margin-bottom: 63px;
+}
+.image{
+  height: 320px;
+  width: 100%;
+}
+.privacy{
+  font-family: NunitoSans-SemiBold;
+  font-size: 16px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #21262b;
+  margin-bottom: 101px;
+}

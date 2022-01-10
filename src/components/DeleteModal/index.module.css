@@ -1,0 +1,59 @@
+.heading{
+    height: 66px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #efefef;
+    padding: 18px;
+}
+.headingText{
+  font-family: NunitoSans-Bold;
+  font-size: 20px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #21262b;
+}
+.content{
+    padding: 18px;
+}
+.container{
+    border-radius: 2px;
+}
+.submitButton{
+    border-radius: 2px;
+    background-color: #de4645;
+    height: 36px;
+    font-family: NunitoSans-SemiBold;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+.cancelButton{
+    border-radius: 2px;
+    border: solid 1px #e1e2e3;
+    background-color: #ffffff;
+    height: 36px;
+    font-family: NunitoSans-SemiBold;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #268bd0;
+    margin-left: 12px;
+}
+.descriptionText{
+    font-family: NunitoSans-SemiBold;
+    font-size: 14px;
+    margin-bottom: 18px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #21262b;
+}

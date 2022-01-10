@@ -1,0 +1,49 @@
+.container {
+    position: fixed;
+    top: -10%;
+    height: 120vh;
+    border-radius: 2px;
+  }
+.heading {
+    height: 66px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #efefef;
+    padding: 18px;
+  }
+  .headingText {
+    font-family: NunitoSans-Bold;
+    font-size: 20px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #21262b;
+  }
+  .hidden {
+    display: none;
+  }
+  
+  .content {
+    /* height: 294px; */
+    padding: 18px;
+  }
+  .inputContainer {
+    margin-bottom: 12px;
+  }
+  .input {
+    height: 30px;
+  }
+  .actionButton {
+    border-radius: 2px;
+    background-color: #0883a7;
+    height: 36px;
+    font-family: NunitoSans-SemiBold;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #ffffff;
+  }

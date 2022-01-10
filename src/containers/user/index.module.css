@@ -1,0 +1,87 @@
+.AddCategoryContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    align-items: center;
+}
+.ProfessionalCategoryText {
+    font-family: NunitoSans-Bold;
+    font-size: 20px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #21262b;
+}
+.AddSubCategory{
+    width: 120px;
+    height: 36px;
+    border-radius: 2px;
+    background-color: #0883a7;
+    font-family: NunitoSans-SemiBold;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+.teacherTable{
+    border-radius: 2px;
+    border: solid 1px #e1e2e3;
+    background-color: #ffffff;
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-bottom: 18px;
+}
+.teacherTableHeader{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: flex;
+    word-wrap: break-word;
+    white-space: initial;
+}
+.name{
+    width: 15%;
+    font-family: NunitoSans-Regular;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #595c60;
+}
+.email{
+    width: 20%;
+    font-family: NunitoSans-Regular;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #595c60;
+}
+.phone{
+    width: 15%;
+    font-family: NunitoSans-Regular;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #595c60;
+}
+.category{
+    width: 15%;
+    font-family: NunitoSans-Regular;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #595c60;
+}

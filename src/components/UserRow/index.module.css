@@ -1,0 +1,57 @@
+.container{
+    border-top: 1px solid #e1e2e3;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: flex;
+    align-items: flex-start;
+    word-wrap: break-word;
+    white-space: initial;
+}
+.name{
+    width: 15%;
+    display: flex;
+}
+
+.email{
+    width: 20%;
+    font-family: NunitoSans-Regular;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #21262b;
+    display: flex;
+}
+.phone{
+    width: 15%;
+    font-family:  NunitoSans-Regular;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #21262b;
+    display: flex;
+}
+
+.category{
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+.desc{
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.horizon{
+    width: 10%;
+    text-align: right;
+}
+.gap{
+    width: 20%;
+}
+.text{
+    width: 80%;
+}

@@ -1,0 +1,44 @@
+.MenuItem{
+    padding-left: 24px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.MenuItemSelected{
+    padding-left: 24px ;
+    height: 40px ;
+    display: flex;
+    align-items: center;
+    color: #0883a7;
+    background-color: #f3f3f3;
+}
+.icon{
+    height: 24px;
+    width: 24px;
+    margin-right: 18px;
+    color: #999999;
+}
+.iconSelected{
+    height: 24px;
+    width: 24px;
+    margin-right: 18px;
+    color: #0883a7;
+}
+.title{
+    font-family: NunitoSans-SemiBold;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #21262b;
+}
+.titleSelected{
+    font-family: NunitoSans-SemiBold;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #0883a7;
+}

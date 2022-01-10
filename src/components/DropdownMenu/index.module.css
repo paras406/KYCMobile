@@ -1,0 +1,22 @@
+.menuItemContainer {
+    border-radius: 2px;
+    box-shadow: 0 8px 16px 0 rgba(60, 66, 87, 0.12), 0 0 4px 0 rgba(0, 0, 0, 0.08);
+}
+.secondaryButton{
+    font-family: NunitoSans-SemiBold !important;
+    font-size: 14px !important;
+    font-stretch: normal !important;
+    font-style: normal !important;
+    line-height: 1.43 !important;
+    letter-spacing: normal !important;
+    color: #21262b !important;
+}
+.primaryButton{
+    font-family: NunitoSans-SemiBold !important;
+    font-size: 14px !important;
+    font-stretch: normal !important;
+    font-style: normal !important;
+    line-height: 1.43 !important;
+    letter-spacing: normal !important;
+    color: #de4645 !important;
+}
