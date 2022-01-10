@@ -42,7 +42,7 @@ const Modal = (props) => {
     const [successMessage, updateSuccessMessage] = useState("");
 
     // get call
-    let { getCall, state } = useGetGraphQL({
+    let [ getCall, state ] = useGetGraphQL({
         query: GET_CATEGORIES,
     });
 

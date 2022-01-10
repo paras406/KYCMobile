@@ -40,10 +40,10 @@ const User = (props) => {
         query: EDIT_USER,
     });
 
-    const {
+    const [
         getCall,
-        state: getUsersState,
-    } = useGetGraphQL({
+        getUsersState,
+    ] = useGetGraphQL({
         query: GET_USERS,
     });
 
@@ -112,12 +112,14 @@ const User = (props) => {
             const message = lodash.get(addUserError, "networkError.result.errors[0].message", "Error Occured");
             updateErrorState(true);
             updateErrorMessage(message);
+            addUserState.reset();
         } else if (addUserData) {
             updateSuccessState(true);
             updateSuccessMessage("User Added Successfully");
             getUserDataFn(); 
+            addUserState.reset();
         }
-    }, [addUserState]);
+    }, [addUserError, addUserData]);
 
     useEffect(() => {
         if (getUserError) {
@@ -125,31 +127,35 @@ const User = (props) => {
             updateErrorState(true);
             updateErrorMessage(message);
         }
-    }, [getUsersState]);
+    }, [getUserError]);
 
     useEffect(() => {
         if (deleteUserError) {
             const message = lodash.get(deleteUserError, "networkError.result.errors[0].message", "Error Occured");
             updateErrorState(true);
             updateErrorMessage(message);
+            deleteUserState.reset();
         } else if (deleteUserData) {
             updateSuccessState(true);
             updateSuccessMessage("User Deleted Successfully");
             getUserDataFn(); 
+            deleteUserState.reset();
         }
-    }, [deleteUserState]);
+    }, [deleteUserError, deleteUserData]);
 
     useEffect(() => {
         if (editUserError) {
             const message = lodash.get(editUserError, "networkError.result.errors[0].message", "Error Occured");
             updateErrorState(true);
             updateErrorMessage(message);
+            editUserState.reset();
         } else if (editUserData) {
             updateSuccessState(true);
             updateSuccessMessage("User Edited Successfully");
             getUserDataFn(); 
+            editUserState.reset();
         }
-    }, [editUserState]);
+    }, [editUserError, editUserData]);
 
     const addUserFn = () => {
         addUser({

@@ -11,8 +11,8 @@ import "../../assets/fonts/fonts.css";
 import styles from "./index.module.css";
 import "./demo.css";
 
-import { GET_KYC } from '../../queries/kyc';
-import { useGetGraphQL } from '../../hooks/useGraphQl';
+import { GET_KYC, UPDATE_KYC } from '../../queries/kyc';
+import { useGetGraphQL, usePostGraphQL } from '../../hooks/useGraphQl';
 import OverlayLoading from "../../components/OverlayLoading";
 import ErrorComponent from '../../components/ErrorComponent';
 import SuccessComponent from "../../components/SuccessComponent";
@@ -99,10 +99,10 @@ const Kyc = (props) => {
 
     // ------------- end -------------- //
 
-    const {
-        getCall: getKyc,
-        state: getKycState,
-    } = useGetGraphQL({
+    const [
+        getKyc,
+        getKycState,
+     ] = useGetGraphQL({
         query: GET_KYC,
     });
 
@@ -111,6 +111,16 @@ const Kyc = (props) => {
         data: getKycData,
         error: getKycError,
     } = getKycState;
+
+    const [updateKyc, updateKycState] = usePostGraphQL({
+        query: UPDATE_KYC,
+    });
+
+    const {
+        loading: updateKycLoading,
+        data: updateKycData,
+        error: updateKycError,
+    } = updateKycState;
 
     useEffect(() => {
         if (getKycError) {
@@ -121,19 +131,30 @@ const Kyc = (props) => {
             const {
               me,
             } = getKycData;
-        //    updateName(me.name);
-        //    updateEmail(me.email);
-        //    updatePhone(`+${me.countryCode} ${me.phoneNumber}`);
-        //    setAadharImageUrl(me.aadharCardFront);
-        //    setAadharBackImageUrl(me.aadharCardBack);
-        //    setPanCardImageUrl(me.panCard);
+           updateName(me.name);
+           updateEmail(me.email);
+           updatePhone(`+${me.countryCode} ${me.phoneNumber}`);
+           setAadharImageUrl(me.aadharCardFront);
+           setAadharBackImageUrl(me.aadharCardBack);
+           setPanCardImageUrl(me.panCard);
         }
-    }, [getKycState]);
+    }, [getKycError, getKycData]);
 
     useEffect(() => {
         getKyc();
     }, []);
-
+    
+    useEffect(() => {
+        if (updateKycError) {
+            const message = lodash.get(updateKycError, "networkError.result.errors[0].message", "Error Occured");
+            updateErrorState(true);
+            updateErrorMessage(message);
+        } else if(updateKycData){
+            updateSuccessState(true);
+            updateSuccessMessage("Kyc Updated Successfully");
+            getKyc();
+        }
+    }, [updateKycData, updateKycError]);
 
     const renderFileDrop = (imageObj) => {
         return (
@@ -194,9 +215,23 @@ const Kyc = (props) => {
         )
     }
 
+    const updateKycFn = () => {
+        updateKyc({
+            variables: {
+                kycStatus: 'PENDING',
+                aadharCardBack: aadharBackImage.url,
+                aadharCardFront: aadharImage.url,
+                panCard: panCardImage.url,
+            }   
+        })
+    }
+
 
     const renderData = () => {
         if(getKycData){
+            const {
+                me,
+              } = getKycData;
             return (
                 <div>
                     <div className={styles.AddCategoryContainer}>
@@ -313,8 +348,9 @@ const Kyc = (props) => {
                         <div style={{ marginBottom: '24px' }} />
                         <Button
                             className={[styles.AddSubCategory]}
-                            onClick={() => { }}
+                            onClick={() => { updateKycFn() }}
                             type="primary"
+                            disabled={(me.aadharCardBack === aadharBackImage.url && me.aadharCardFront === aadharImage.url && me.panCard === panCardImage.url)}
                         >
                             Submit
                         </Button>
@@ -325,7 +361,7 @@ const Kyc = (props) => {
     };
 
     const renderLoading = () => {
-        if (loading || getKycLoading) {
+        if (loading || getKycLoading || updateKycLoading) {
             return <OverlayLoading />
         }
         return null;

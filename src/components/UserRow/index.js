@@ -58,7 +58,7 @@ const UserRow = (props) => {
         updateEditUserModalVisible(false);
         updateName(user.name);
         updateEmail(user.email);
-        updatePhone(user.phone);
+        updatePhone(user.phoneNumber);
         updateDesc(user.desc);
         updateCategoryId(defaultCategoryID);
         updateSubCategoryId(defaultSubCategoryID);
