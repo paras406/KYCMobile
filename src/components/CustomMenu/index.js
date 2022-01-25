@@ -7,24 +7,31 @@ import Select from '@material-ui/core/Select';
 
 const useStyles = makeStyles((theme) => ({
     formControl: {
-        marginBottom: 12,
-        minWidth: 120,
         width: '100%',
     },
-    selectEmpty: {
-        marginTop: theme.spacing(2),
+    select: {
+        height: '21px',
+        padding: '10.5px 16.5px 10.5px 17px',
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center',
+        fontFamily: 'Poppins',
+        fontSize: '16px',
+        color: '#050505',
     },
     Heading: {
-        fontFamily: 'NunitoSans-Regular',
-        fontSize: '14px',
-        color: '#595c60',
-        marginBottom: '4px',
+        fontFamily: 'Poppins',
+        fontSize: '18px',
+        color: '#808080',
+        marginBottom: '14px',
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
     },
     inputRoot: {
-        padding: "10px 14px"
+    },
+    container: {
+        marginBottom: '24px',
     }
 }));
 
@@ -41,17 +48,25 @@ export default function SimpleSelect(props) {
     };
 
     return (
-        <div>
+        <div className={classes.container}>
             <div className={classes.Heading}>
                 <div>{heading}</div>
             </div>
-            <FormControl variant="outlined" className={classes.formControl}>
+            {/* <FormControl variant="outlined" className={classes.formControl}> */}
                 <Select
                     labelId="demo-simple-select-outlined-label"
                     id="demo-simple-select-outlined"
                     value={item}
                     onChange={handleChange}
                     label="Age"
+                    classes={{
+                        root: classes.select,
+                    }}
+                    style={{
+                        borderRadius: '12px',
+                        width: '100%',
+                        border: '1px solid #d3d5d9',
+                    }}
                     input={<OutlinedInput classes={{ input: classes.inputRoot }} />}
                 >
                     {
@@ -62,7 +77,7 @@ export default function SimpleSelect(props) {
                         })
                     }
                 </Select>
-            </FormControl>
+            {/* </FormControl> */}
         </div>
     );
 }

@@ -1,0 +1,125 @@
+.container{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.mobileHeadingContainer{
+    background-image: linear-gradient(104deg, #0176f6 0%, #1fa4f0 46%, #0084ff 87%);
+    padding: 36px 86px;
+}
+
+.mobileHeading1{
+    font-family: Gilroy-SemiBold;
+    font-size: 27px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+}
+
+.mobileHeading2{
+  font-family: Gilroy-Medium;
+  font-size: 13px;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.53);
+}
+
+.mobileNumberContainer{
+    padding: 41px 37px 77px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column; 
+}
+
+.mobileNumberText{
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #808080;
+    margin-bottom: 14px;
+}
+
+.mobileNumberInput{
+    height: 44px;
+    border-radius: 12px;
+    border: solid 1px #d3d5d9;
+    background-color: #fff;
+    padding: 10.5px 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.countryCodeBlock{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #050505;
+}
+
+.countryCodeDivider{
+    width: 1px;
+    background-color: #d3d5d9; 
+    height: 100%;
+    margin-left: 30px;
+    margin-right: 12px;
+}
+
+.input{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #050505;
+}
+.textField{
+    width: 100%;
+}
+
+.buttonContainer{
+    background-color: #10b582 !important;
+    height: 50px;
+    border-radius: 12px !important;
+    box-shadow: 0 20px 40px 0 rgba(16, 181, 130, 0.45) !important;
+}
+
+.buttonText{
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+}
+
+.groupImage{
+    width: 100%;
+    height: 524px;
+    /* padding: 49.2px 47.6px 75.2px 68px; */
+    background-image: linear-gradient(137deg, #0176f6 1%, #1fa4f0 48%, #0084ff 92%);
+}

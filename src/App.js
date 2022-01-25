@@ -11,10 +11,14 @@ import {
 
 import {
   Login,
-  AdminHome
+  MobileOTP,
+  UserScreen,
 } from './containers';
 import CustomRoute from './components/CustomRoute';
 import client from './apolloClient';
+
+import './App.css';
+import './assets/fonts/fonts.css';
 
 
 const StackNavigator = () => {
@@ -27,9 +31,12 @@ const StackNavigator = () => {
         <Route path="/login">
           <Login />
         </Route>
-        <CustomRoute path="/adminHome">
-          <AdminHome />
-        </CustomRoute>
+        <Route path="/mobileOTP">
+          <MobileOTP />
+        </Route>
+        <Route path="/users">
+          <UserScreen />
+        </Route>
       </Switch>
     </Router>
   );

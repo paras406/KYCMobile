@@ -1,7 +1,9 @@
-import Login from './login';
-import AdminHome from './adminHome';
+import Login from './mobileLogin';
+import MobileOTP from './mobileOtp';
+import UserScreen from './userScreen';
 
 export {
  Login,
- AdminHome,
+ MobileOTP,
+ UserScreen,
 };

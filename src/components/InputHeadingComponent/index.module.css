@@ -1,48 +1,39 @@
-.Input { 
-    height: 40px;
-    border-radius: 2px;
-    border: solid 1px #e1e2e3;
-    background-color: #f8f9f9;
-    font-family: NunitoSans-SemiBold;
-    font-size: 14px;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.43;
-    letter-spacing: normal;
-    color: #21262b;
-  }
-  .Heading {
-    font-family: NunitoSans-Regular;
-    font-size: 14px;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.43;
-    letter-spacing: normal;
-    color: #595c60;
-    margin-bottom: 4px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .Container {
-    margin-bottom: 18px;
-    width: 100%;
-  }
-  .redBoundary {
-    box-shadow: 0 0 0 1px red !important;
-    height: 40px;
-    border-radius: 2px;
-    border: solid 1px #e1e2e3 !important;
-    background-color: #f8f9f9;
-    font-family: NunitoSans-SemiBold;
-    font-size: 14px;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.43;
-    letter-spacing: normal;
-    color: #21262b;
-  }
-  .inputContainer{
-    display: flex;
-    flex-direction: row;
-  }
+.container{
+  margin-bottom: 24px;
+}
+.heading{
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #808080;
+  margin-bottom: 14px;
+}
+.inputContainer{
+  height: 44px;
+  padding: 10.5px 17px 10.5px 17px;
+  border-radius: 12px;
+  border: solid 1px #d3d5d9;
+  background-color: #fff;
+  align-items: center;
+  display: flex;
+}
+.input{
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #050505;
+  width: 100%;
+}
+.textField{
+  width: 100%;
+}

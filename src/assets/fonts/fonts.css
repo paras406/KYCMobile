@@ -1,12 +1,24 @@
 @font-face {
-    font-family: 'NunitoSans-Regular';
-    src: url(./NunitoSans-Regular.ttf) format('truetype');
+    font-family: 'Gilroy-Medium';
+    src: url(./Gilroy-Medium.ttf) format('truetype');
 }
+
 @font-face {
-    font-family: 'NunitoSans-Bold';
-    src: url(./NunitoSans-Bold.ttf) format('truetype');
+    font-family: 'Gilroy-SemiBold';
+    src: url(./Gilroy-SemiBold.ttf) format('truetype');
 }
+
 @font-face {
-    font-family: 'NunitoSans-SemiBold';
-    src: url(./NunitoSans-SemiBold.ttf) format('truetype');
+    font-family: 'Poppins';
+    src: url(./Poppins-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(./Roboto-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url(./Roboto-Medium.ttf) format('truetype');
 }

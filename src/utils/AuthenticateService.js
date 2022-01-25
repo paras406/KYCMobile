@@ -22,11 +22,11 @@ class AuthenticateService extends Service {
     }
 
     getId = () => {
-        return  this.data?.user ? this.data.user.id : '';
+        return  this.data ? this.data.id : '';
     }
 
     storeUserInfo = (data) => {
-      this.data = data?.login;
+      this.data = data;
     }
 }
 
